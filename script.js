@@ -51,11 +51,11 @@ txtNumber.addEventListener("change", function myf(){
   txtOutput.style.fontSize = txtNumber.value + "px";
 });
 
-// function myColor() {   
-//     var color = document.getElementById('colorPicker').value;  
-//     document.body.querySelector('#textArea').style.color = color;   
-//     document.getElementById('box').value = color;
-// }
+function myColor() {   
+    var color = document.getElementById('colorPicker').value;  
+    document.body.querySelector('#textArea').style.color = color;   
+    document.getElementById('box').value = color;
+}
 
 
 document.getElementById('colorPicker')

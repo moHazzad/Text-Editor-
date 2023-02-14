@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <section class="bg-green-300 ">
+        <h1 class="py-7 text-center text-4xl font-bold">My Text Editor</h1>
+        <div class="w-10/12 mx-auto bg-slate-400 py-10 px-6">
+            <div class="flex justify-between ">
+                <div class="gap-4 flex justify-between btnAction">
+
+                    <i id="bold" class="fa-solid fa-bold bolla"></i>
+                    <i id="italic" class="fa-solid fa-italic"></i>
+                    <i id="underline" class="fa-solid fa-underline"></i>
+                </div>
+                <div class="gap-4 flex justify-between textAction">
+                    <i id="start" class="fa-sharp fa-solid fa-align-left"></i>
+                    <i id="center" class="fa-sharp fa-solid fa-align-justify"></i>  
+                    <i id="end" class="fa-sharp fa-solid fa-align-right"></i>
+                </div>
+                <div class="flex justify-between gap-4">
+                    <input id="fontSize" class="fontSize" type="number">
+                    <i class="fa-sharp fa-regular fa-palette"></i>
+                    <div class="main">                    
+                        <input type="color" 
+                            id="colorPicker" value="#6a5acd">                                   
+                        <input type="text" id="box">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full py-8">
+                <textarea   name=" " id="textArea" ></textarea>
+            </div>
+        </div>
+    </section>
+     
+
+    <script src="./script.js"></script>
+</body>
+</html>

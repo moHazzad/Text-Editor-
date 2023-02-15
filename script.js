@@ -58,5 +58,6 @@ function myColor() {
 }
 
 
-document.getElementById('colorPicker')
-    .addEventListener('input', myColor);
+document.getElementById('colorPicker').addEventListener('input', myColor);
+
+
